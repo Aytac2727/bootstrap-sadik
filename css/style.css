@@ -1,0 +1,58 @@
+#infoMe {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+#infoMe h1, #infoMe span {
+    color: white;
+}
+
+
+#cards .cards-item {
+    overflow: hidden;
+    position: relative;
+}
+
+#cards .cards-item::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: .4s;
+}
+
+#cards .cards-item:hover::after {
+    opacity: .6;
+}
+
+
+#cards .cards-item img {
+    transition: .4s;
+}
+
+#cards .cards-item:hover img {
+    transform: scale(1.1);
+}
+
+#cards .cards-ico {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    color: white;
+    z-index: 1;
+}
+
+#cards .cards-item:hover .cards-ico {
+    top: 50%;
+    opacity: 1;
+    visibility: visible;
+}

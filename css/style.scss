@@ -1,0 +1,17 @@
+#header {
+    background: gold;
+    nav {
+        .main-dropdown {
+            &:hover {
+                .main-dropped {
+                    display: block;
+                    background-color: rgb(43, 41, 41);
+                }
+            }
+        }
+    }
+}
+
+#infoMe {
+    height: 100vh;
+}
